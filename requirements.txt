@@ -1,0 +1,7 @@
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.6
+imbalanced-learn>=0.14
+matplotlib>=3.9
+joblib>=1.4
+huggingface_hub>=0.26
