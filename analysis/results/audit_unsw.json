@@ -1,0 +1,98 @@
+{
+  "train_rows": 175341,
+  "train_cols": 45,
+  "test_rows": 82332,
+  "test_cols": 45,
+  "train_duplicates": 0,
+  "test_duplicates": 0,
+  "train_duplicates_feature_only": 67601,
+  "test_duplicates_feature_only": 26387,
+  "train_missing_cells": 0,
+  "test_missing_cells": 0,
+  "numeric_features": 39,
+  "categorical_features": 3,
+  "binary_label_counts_train": {
+    "1": 119341,
+    "0": 56000
+  },
+  "binary_label_counts_test": {
+    "1": 45332,
+    "0": 37000
+  },
+  "attack_cat_train": {
+    "Normal": 56000,
+    "Generic": 40000,
+    "Exploits": 33393,
+    "Fuzzers": 18184,
+    "DoS": 12264,
+    "Reconnaissance": 10491,
+    "Analysis": 2000,
+    "Backdoor": 1746,
+    "Shellcode": 1133,
+    "Worms": 130
+  },
+  "attack_cat_test": {
+    "Normal": 37000,
+    "Generic": 18871,
+    "Exploits": 11132,
+    "Fuzzers": 6062,
+    "DoS": 4089,
+    "Reconnaissance": 3496,
+    "Analysis": 677,
+    "Backdoor": 583,
+    "Shellcode": 378,
+    "Worms": 44
+  },
+  "service_placeholder_count_train": 94168,
+  "service_placeholder_count_test": 47153,
+  "proto_levels": 133,
+  "service_levels": 13,
+  "state_levels": 9,
+  "infinite_values_train": 0,
+  "infinite_values_test": 0,
+  "constant_features": [],
+  "near_constant_features": [],
+  "duplicates_removed_train": 67601,
+  "duplicates_removed_test": 26387,
+  "train_rows_after_clean": 107740,
+  "test_rows_after_clean": 55945,
+  "identical_feature_vectors_train": 6700,
+  "binary_label_counts_train_clean": {
+    "1": 55850,
+    "0": 51890
+  },
+  "binary_label_counts_test_clean": {
+    "0": 34206,
+    "1": 21739
+  },
+  "attack_cat_train_clean": {
+    "Normal": 51890,
+    "Exploits": 19844,
+    "Fuzzers": 16150,
+    "Reconnaissance": 7522,
+    "Generic": 4181,
+    "DoS": 3806,
+    "Analysis": 1594,
+    "Backdoor": 1535,
+    "Shellcode": 1091,
+    "Worms": 127
+  },
+  "attack_cat_test_clean": {
+    "Normal": 34206,
+    "Exploits": 7609,
+    "Fuzzers": 4838,
+    "Generic": 3657,
+    "Reconnaissance": 2703,
+    "DoS": 1718,
+    "Analysis": 446,
+    "Shellcode": 378,
+    "Backdoor": 346,
+    "Worms": 44
+  },
+  "encoded_feature_count": 73,
+  "categorical_levels_retained": {
+    "proto": 15,
+    "service": 11,
+    "state": 5
+  }
+}

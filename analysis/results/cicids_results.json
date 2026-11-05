@@ -1,0 +1,291 @@
+{
+  "n_total": 146370,
+  "n_train": 102459,
+  "n_test": 43911,
+  "attack_rate": 0.20533579285372686,
+  "n_features": 68,
+  "label_counts": {
+    "BENIGN": 116315,
+    "DDoS": 17103,
+    "PortScan": 10856,
+    "FTP-Patator": 1154,
+    "Web_Attack_\ufffd_Brute_Force": 415,
+    "Bot": 245,
+    "SSH-Patator": 183,
+    "Web_Attack_\ufffd_XSS": 94,
+    "Web_Attack_\ufffd_Sql_Injection": 5
+  },
+  "train_time_s": 20.629420042037964,
+  "oob_score": 0.9988190398110464,
+  "baseline": {
+    "accuracy": 0.9987702398032383,
+    "precision": 0.9994427106553723,
+    "recall": 0.9945652173913043,
+    "f1": 0.9969979986657772,
+    "fpr": 0.0001432870038687491,
+    "balanced_accuracy": 0.9972109651937178,
+    "mcc": 0.9962294556543088,
+    "kappa": 0.9962247421764,
+    "tn": 34890,
+    "fp": 5,
+    "fn": 49,
+    "tp": 8967,
+    "roc_auc": 0.9998723258125244,
+    "pr_auc": 0.9997813850949703
+  },
+  "feature_importance": [
+    {
+      "feature": "Avg_Fwd_Segment_Size",
+      "importance": 0.07051706799264952
+    },
+    {
+      "feature": "Fwd_Packet_Length_Max",
+      "importance": 0.06360641244281008
+    },
+    {
+      "feature": "Fwd_Packet_Length_Mean",
+      "importance": 0.0574425396325293
+    },
+    {
+      "feature": "Packet_Length_Variance",
+      "importance": 0.05258211498347564
+    },
+    {
+      "feature": "Subflow_Fwd_Bytes",
+      "importance": 0.05020714142484214
+    },
+    {
+      "feature": "Bwd_Packet_Length_Mean",
+      "importance": 0.04669179150295482
+    },
+    {
+      "feature": "Average_Packet_Size",
+      "importance": 0.04486113080152436
+    },
+    {
+      "feature": "Total_Length_of_Fwd_Packets",
+      "importance": 0.04020684953958553
+    },
+    {
+      "feature": "Packet_Length_Std",
+      "importance": 0.03902874081577717
+    },
+    {
+      "feature": "Bwd_Packet_Length_Max",
+      "importance": 0.0325182579004463
+    },
+    {
+      "feature": "Packet_Length_Mean",
+      "importance": 0.030927060435001565
+    },
+    {
+      "feature": "PSH_Flag_Count",
+      "importance": 0.029927556776171208
+    },
+    {
+      "feature": "Avg_Bwd_Segment_Size",
+      "importance": 0.029926513472382867
+    },
+    {
+      "feature": "Max_Packet_Length",
+      "importance": 0.02858201646709451
+    },
+    {
+      "feature": "Bwd_Packet_Length_Std",
+      "importance": 0.02540079549192317
+    },
+    {
+      "feature": "Fwd_Header_Length",
+      "importance": 0.02209510863533761
+    },
+    {
+      "feature": "Init_Win_bytes_forward",
+      "importance": 0.01998246727629578
+    },
+    {
+      "feature": "Destination_Port",
+      "importance": 0.019650098106897728
+    },
+    {
+      "feature": "act_data_pkt_fwd",
+      "importance": 0.019297755599491886
+    },
+    {
+      "feature": "Flow_Bytes/s",
+      "importance": 0.018502492988119304
+    },
+    {
+      "feature": "Total_Fwd_Packets",
+      "importance": 0.018161776386115974
+    },
+    {
+      "feature": "ACK_Flag_Count",
+      "importance": 0.016981934910872833
+    },
+    {
+      "feature": "Init_Win_bytes_backward",
+      "importance": 0.01420934541579532
+    },
+    {
+      "feature": "Total_Length_of_Bwd_Packets",
+      "importance": 0.013524105570959727
+    },
+    {
+      "feature": "Subflow_Fwd_Packets",
+      "importance": 0.013270765238445765
+    }
+  ],
+  "feature_selection": {
+    "5": {
+      "accuracy": 0.9933957322766505,
+      "precision": 0.9954576425164661,
+      "recall": 0.9722715173025732,
+      "f1": 0.9837279766580631,
+      "fpr": 0.0011462960309499928,
+      "balanced_accuracy": 0.9855626106358116,
+      "mcc": 0.9796928917856772,
+      "kappa": 0.9795858411469014,
+      "tn": 34855,
+      "fp": 40,
+      "fn": 250,
+      "tp": 8766,
+      "roc_auc": 0.9979342085706988,
+      "pr_auc": 0.9911314519554808,
+      "train_time_s": 5.127138137817383,
+      "n_features": 5
+    },
+    "10": {
+      "accuracy": 0.9937601056682835,
+      "precision": 0.9972696245733789,
+      "recall": 0.9722715173025732,
+      "f1": 0.9846119285634056,
+      "fpr": 0.0006877776185699957,
+      "balanced_accuracy": 0.9857918698420016,
+      "mcc": 0.9808236217448486,
+      "kappa": 0.9806993280638563,
+      "tn": 34871,
+      "fp": 24,
+      "fn": 250,
+      "tp": 8766,
+      "roc_auc": 0.9980865749740031,
+      "pr_auc": 0.9915549599557303,
+      "train_time_s": 7.168897390365601,
+      "n_features": 10
+    },
+    "15": {
+      "accuracy": 0.9938739723531689,
+      "precision": 0.9978372225384178,
+      "recall": 0.9722715173025732,
+      "f1": 0.9848884894107073,
+      "fpr": 0.0005444906147012466,
+      "balanced_accuracy": 0.985863513343936,
+      "mcc": 0.9811775515558696,
+      "kappa": 0.9810475961429008,
+      "tn": 34876,
+      "fp": 19,
+      "fn": 250,
+      "tp": 8766,
+      "roc_auc": 0.9990393302483188,
+      "pr_auc": 0.99607244394491,
+      "train_time_s": 6.8742969036102295,
+      "n_features": 15
+    },
+    "20": {
+      "accuracy": 0.9957413859852884,
+      "precision": 0.9984193293440217,
+      "recall": 0.9808118899733806,
+      "f1": 0.9895372908856935,
+      "fpr": 0.00040120361083249747,
+      "balanced_accuracy": 0.9902053431812741,
+      "mcc": 0.9869257394606609,
+      "kappa": 0.9868641801958142,
+      "tn": 34881,
+      "fp": 14,
+      "fn": 173,
+      "tp": 8843,
+      "roc_auc": 0.9995715836189009,
+      "pr_auc": 0.9989881845563795,
+      "train_time_s": 9.618325233459473,
+      "n_features": 20
+    },
+    "30": {
+      "accuracy": 0.9992029332058027,
+      "precision": 0.9995550116809434,
+      "recall": 0.996561668145519,
+      "f1": 0.9980560955290197,
+      "fpr": 0.00011462960309499928,
+      "balanced_accuracy": 0.998223519271212,
+      "mcc": 0.9975565611107929,
+      "kappa": 0.9975547863780057,
+      "tn": 34891,
+      "fp": 4,
+      "fn": 31,
+      "tp": 8985,
+      "roc_auc": 0.9998719491596858,
+      "pr_auc": 0.999770688659405,
+      "train_time_s": 10.86841082572937,
+      "n_features": 30
+    }
+  },
+  "timing": {
+    "batch_total_s": 0.1978353330000573,
+    "per_flow_us": 4.505370704380617,
+    "throughput_flows_per_s": 221957.31841282005,
+    "single_record_latency_us": 40833.56943999934
+  },
+  "multi_accuracy": 0.9996572055395585,
+  "multi_macro_f1": 0.9934647632801734,
+  "multi_weighted_f1": 0.9996552038677999,
+  "multi_per_class": {
+    "BENIGN": {
+      "precision": 0.9996848408446265,
+      "recall": 0.9999140277976788,
+      "f1-score": 0.9997994211868535,
+      "support": 34895.0
+    },
+    "DDoS": {
+      "precision": 1.0,
+      "recall": 0.9996106677048862,
+      "f1-score": 0.9998052959501558,
+      "support": 5137.0
+    },
+    "FTP-Patator": {
+      "precision": 1.0,
+      "recall": 0.9938271604938271,
+      "f1-score": 0.9969040247678018,
+      "support": 324.0
+    },
+    "PortScan": {
+      "precision": 0.9990800367985281,
+      "recall": 0.9996931574102486,
+      "f1-score": 0.9993865030674847,
+      "support": 3259.0
+    },
+    "Web_Attack_\ufffd_Brute_Force": {
+      "precision": 0.9927007299270073,
+      "recall": 0.951048951048951,
+      "f1-score": 0.9714285714285714,
+      "support": 143.0
+    },
+    "accuracy": 0.9996572055395585,
+    "macro avg": {
+      "precision": 0.9982931215140324,
+      "recall": 0.9888187928911183,
+      "f1-score": 0.9934647632801734,
+      "support": 43758.0
+    },
+    "weighted avg": {
+      "precision": 0.9996563043461585,
+      "recall": 0.9996572055395585,
+      "f1-score": 0.9996552038677999,
+      "support": 43758.0
+    }
+  },
+  "multi_classes": [
+    "BENIGN",
+    "DDoS",
+    "PortScan",
+    "FTP-Patator",
+    "Web_Attack_\ufffd_Brute_Force"
+  ]
+}

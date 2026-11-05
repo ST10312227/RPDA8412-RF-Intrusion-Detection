@@ -1,0 +1,38 @@
+{
+  "full_feature_200_trees": {
+    "train_time_s": 38.87638545036316,
+    "batch_total_s": 0.9869969540000056,
+    "per_flow_us": 17.642272839395936,
+    "throughput_flows_per_s": 56682.03916260483,
+    "single_record_latency_ms": 9.568737223333605,
+    "micro_batch_per_flow_ms": 0.11733747480000147,
+    "n_trees": 200,
+    "avg_tree_depth": 42.21,
+    "n_nodes": 2431912,
+    "n_features": 73
+  },
+  "full_feature_100_trees": {
+    "train_time_s": 19.389281034469604,
+    "batch_total_s": 0.5117308010003399,
+    "per_flow_us": 9.14703371168719,
+    "throughput_flows_per_s": 109325.05897756747,
+    "single_record_latency_ms": 4.873865153332796,
+    "micro_batch_per_flow_ms": 0.06388101640000059,
+    "n_trees": 100,
+    "avg_tree_depth": 42.02,
+    "n_nodes": 1216554,
+    "n_features": 73
+  },
+  "reduced_20_features_200_trees": {
+    "train_time_s": 42.12697243690491,
+    "batch_total_s": 0.9199089829999139,
+    "per_flow_us": 16.443095593885314,
+    "throughput_flows_per_s": 60815.799208262804,
+    "single_record_latency_ms": 9.696153660000466,
+    "micro_batch_per_flow_ms": 0.12313460159998614,
+    "n_trees": 200,
+    "avg_tree_depth": 39.515,
+    "n_nodes": 2303116,
+    "n_features": 20
+  }
+}
